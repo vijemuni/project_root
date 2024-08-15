@@ -178,6 +178,78 @@
                 transform: rotate(360deg);
             }
         }
+
+        /* New responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            #reviews {
+                font-size: 2rem;
+            }
+
+            #customers {
+                font-size: 1.5rem;
+            }
+
+            .card-body {
+                padding: 1rem;
+            }
+
+            #addReviewBtn {
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                max-width: 100%;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            .col-md-8 {
+                flex: 0 0 auto;
+                width: 100%;
+                max-width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #reviews {
+                font-size: 1.8rem;
+            }
+
+            #customers {
+                font-size: 1.3rem;
+            }
+
+            .card-body {
+                padding: 0.8rem;
+            }
+
+            #addReviewBtn {
+                font-size: 0.9rem;
+            }
+
+            .list-group-item {
+                padding: 0.5rem;
+            }
+        }
+
+        html, body {
+            overflow-x: hidden;
+        }
+
+        @media (max-width: 576px) {
+            .modal-dialog {
+                margin: 0.5rem;
+            }
+        }
     </style>
 </head>
 
